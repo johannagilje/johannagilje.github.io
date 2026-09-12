@@ -16,7 +16,7 @@
     <meta property="og:image:alt" content="The Imaginary Shape of Community: A Reflection on the Edges of the Real World">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="i/favicon.ico">
     
     <title>Writing - Johanna Gilje</title>
     <link rel="stylesheet" href="style.css">
@@ -24,46 +24,30 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="site-title">JOHANNA GILJE</h1>
+            <h1 class="site-title"><a href="index.html">JOHANNA GILJE</a></h1>
             <p class="tagline">artist, writer, researcher</p>
             <nav>
                 <a href="index.html">About</a>
                 <a href="writing.html" class="active">Writing</a>
+                <!-- <a href="interviews.html">Interviews</a> -->
+                <!-- <a href="artistic-work.html">Artistic Work</a> -->
+                <a href="cv.html">CV</a>
             </nav>
         </div>
     </header>
 
-<nav id="pubnav">  
-    <ul> 
-    <h2 id="books">Books</h2>
-<li>2016 <em>The Desire to Contain and the Inevitability of Rupture</em><h2 id="books-edited">Books Edited</h2>
-</li>
-<li>2026 <em>Activist Ecologies</em></li>
-<li>2020 <em>Lefebvre for Activists</em><h2 id="chapters-articles">Chapters &amp; Articles</h2>
-</li>
-<li>2021 &quot;A Reflection on Forms of Durational Relating.&quot;</li>
-<li>2020 &quot;What is Activism? From Under, From Over.&quot;</li>
-<li>2015 &quot;Body Process Archive.&quot; <h2 id="conducted-interviews">Conducted Interviews</h2>
-</li>
-<li>2016 &quot;A Daily Moment.&quot; with Kata Kovács and Tom O&#39;Doherty </li>
-<li>2015 Series for Month of Performance Art Berlin<h2 id="selected-press">Selected Press</h2>
-</li>
-<li>2018 Homemade Culture Blog, Akademie Schloss Solitude</li>
-</ul>
-
-</nav>
-
-
     <main>
         <div class="container">
-            <section class="content">
-                <h2>Writing</h2>
+            <div class="content-with-pubnav">
+                <section class="content">
+                    <!-- note: ind. projects should be wrapped into an element for more control related to spacing. -->
+                <div class="pub-sections">
+                    <h2 id="ma-thesis">MA Thesis</h2>
                 
-                    <h3>The Imaginary Shape of Community: A Reflection on the Edges of the Real World</h3>
+                    <h3 id="work-imaginary-shape"><em>The Imaginary Shape of Community: A Reflection on the Edges of the Real World</em></h3>
                     
                     <p>This writing is about imagination and my experience of community, starting with my childhood in a remote village in the Cascade Mountains of Washington State. I go many places after that, exploring cults, communes, and psychedelic drug trips of the American hippie movement. Some ideas stretch back to utopian colonies in Europe and some later mutate into a Silicon Valley tech ethos. I search for the roots and fruits of flower power alongside early visions of computers, visions that change shape and morph into cloud technology. I write about the house my parents built for our family in northern Idaho and about the impulse to build new, alternative worlds. I examine crisscrossing coalitions that spun out of COVID and drink the Kool-Aid to go down rabbit holes, reflecting back on my time in tech. Behind my questioning of community as a political tool, I ask a question: "What is the real world?"</p>
-                  
-                <img src="i/Imaginary_Shape_of_Community.jpg" alt="The Imaginary Shape of Community" class="book-cover" onclick="openLightbox(this)">
+                <img src="i\GIlje_Imaginary Shape of Community.jpg" alt="The Imaginary Shape of Community" class="book-cover" onclick="openLightbox(this)">
 
                 <div class="writing-piece">
                     <p class="excerpt-intro">Excerpt:</p>
@@ -82,7 +66,75 @@
                         <p>But it’s never easy to see things from a distance, especially when they feel so close. Also, our world is morphing. In it, light and shadow shift and mix together in complicated ways..."</p>
                     </blockquote>
                 </div>
+                
+
+                    <!-- <h2 id="books">Books</h2>
+                    <h3 id="work-desire-contain-rupture">2016 <em>The Desire to Contain and the Inevitability of Rupture</em></h3>
+
+                    <h2 id="books-edited">Books Edited</h2>
+                    <h3 id="work-activist-ecologies">2026 <em>Activist Ecologies</em></h3>
+                    <h3 id="work-lefebvre-activists">2020 <em>Lefebvre for Activists</em></h3>
+
+                    <h2 id="chapters-articles">Chapters &amp; Articles</h2>
+                    <h3 id="work-reflection-durational">2021 &quot;A Reflection on Forms of Durational Relating.&quot;</h3>
+                    <h3 id="work-what-is-activism">2020 &quot;What is Activism? From Under, From Over.&quot;</h3>
+                    <h3 id="work-body-process-archive">2015 &quot;Body Process Archive.&quot;</h3>
+
+                    <h2 id="conducted-interviews">Conducted Interviews</h2>
+                    <h3 id="work-daily-moment">2016 &quot;A Daily Moment.&quot; with Kata Kovács and Tom O&#39;Doherty</h3>
+                    <h3 id="work-mpab-series">2015 Series for Month of Performance Art Berlin</h3>
+
+                    <h2 id="selected-press">Selected Press</h2>
+                    <h3 id="work-homemade-culture">2018 Homemade Culture Blog, Akademie Schloss Solitude</h3> -->
+                </div>
             </section>
+
+            <!-- <nav id="pubnav" aria-label="Publication navigation">
+                
+                <ul>
+                    <li>
+                        <a href="#ma-thesis" class="pubnav-heading">MA Thesis</a>
+                        <ul>
+                            <li><a href="#work-imaginary-shape">2025 The Imaginary Shape of Community</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#books" class="pubnav-heading">Books</a>
+                        <ul>
+                            <li><a href="#work-desire-contain-rupture">2016 The Desire to Contain and the Inevitability of Rupture</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#books-edited" class="pubnav-heading">Books Edited</a>
+                        <ul>
+                            <li><a href="#work-activist-ecologies">2026 Activist Ecologies</a></li>
+                            <li><a href="#work-lefebvre-activists">2020 Lefebvre for Activists</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#chapters-articles" class="pubnav-heading">Chapters &amp; Articles</a>
+                        <ul>
+                            <li><a href="#work-reflection-durational">2021 A Reflection on Forms of Durational Relating</a></li>
+                            <li><a href="#work-what-is-activism">2020 What is Activism? From Under, From Over</a></li>
+                            <li><a href="#work-body-process-archive">2015 Body Process Archive</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#conducted-interviews" class="pubnav-heading">Conducted Interviews</a>
+                        <ul>
+                            <li><a href="#work-daily-moment">2016 A Daily Moment</a></li>
+                            <li><a href="#work-mpab-series">2015 Series for Month of Performance Art Berlin</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#selected-press" class="pubnav-heading">Selected Press</a>
+                        <ul>
+                            <li><a href="#work-homemade-culture">2018 Homemade Culture Blog, Akademie Schloss Solitude</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> -->
+        </div>
         </div>
     </main>
 

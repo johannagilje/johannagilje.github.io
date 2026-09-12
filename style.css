@@ -19,7 +19,7 @@ body {
 
 /* Container */
 .container {
-    max-width: 800px;
+    max-width: 1040px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -79,6 +79,100 @@ main {
     min-height: calc(100vh - 300px);
 }
 
+/* Main + Publication Navigation Layout */
+.content-with-pubnav {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.content-with-pubnav .content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Publication Navigation (Sticky) */
+#pubnav {
+    display: block;
+    position: sticky;
+    top: 140px;
+    width: 220px;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+    background-color: #eceeef;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 16px 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    z-index: 5;
+}
+
+#pubnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#pubnav ul ul {
+    margin-top: 0px;
+    padding-left: 15px;
+    border-left: 1px solid #b9b9b9;
+}
+
+#pubnav li {
+    margin: 10px 0;
+    line-height: 1.1;
+
+}
+
+#pubnav ul ul li {
+    margin: 5px 0 15px 0;
+}
+
+#pubnav a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+#pubnav .pubnav-heading {
+    display: inline-block;
+    font-size: 0.78rem;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #333;
+}
+
+#pubnav ul ul a {
+    font-size: 0.82rem;
+    color: #666;
+}
+
+#pubnav a:hover {
+    color: #000;
+}
+
+.pub-sections {
+    margin-top: 0px;
+}
+
+.pub-sections h2 {
+    margin-top: 0;
+    scroll-margin-top: 120px;
+}
+
+.pub-sections h3 {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #444;
+    scroll-margin-top: 120px;
+}
+
 .content {
     background-color: #eceeef;
     padding: 40px;
@@ -88,7 +182,7 @@ main {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 400;
     margin-bottom: 30px;
     color: #444;
@@ -170,6 +264,17 @@ footer p {
     blockquote {
         padding-left: 15px;
         margin: 20px 0;
+    }
+
+    .content-with-pubnav {
+        flex-direction: column;
+    }
+
+    #pubnav {
+        position: static;
+        width: 100%;
+        max-height: none;
+        margin-top: 10px;
     }
 }
 
